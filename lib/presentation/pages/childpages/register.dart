@@ -51,7 +51,7 @@ class Register extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           borderRadius: 5),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/home');
+                        Navigator.pushNamed(context, '/viewPage');
                       },
                       child: Text(
                         'Sing Up',

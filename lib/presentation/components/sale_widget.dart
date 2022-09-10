@@ -4,8 +4,8 @@ import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/clock.dart';
 
-class SaleWidget extends StatelessWidget {
-  const SaleWidget({
+class SaleTable extends StatelessWidget {
+  const SaleTable({
     Key? key,
   }) : super(key: key);
 

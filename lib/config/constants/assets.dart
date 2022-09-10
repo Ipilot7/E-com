@@ -56,6 +56,7 @@ class _Icons extends _AssetsHolder {
   String get womanpants => '$basePath/womanpants.svg';
   String get womanshoes => '$basePath/womanshoes.svg';
   String get womantshirt => '$basePath/womantshirt.svg';
+  String get star => '$basePath/star.svg';
 
   // String get appLogoSvg => '$basePath/app_logo_vector.svg';
 }
@@ -65,6 +66,9 @@ class _Images extends _AssetsHolder {
 
   String get image => "$basePath/image.jpg";
   String get cross => "$basePath/cross.jpg";
+  String get recom => "$basePath/recom.jpg";
+  String get avatar => "$basePath/avatar.jpg";
+  String get crossView => "$basePath/crossView.jpg";
   // String get userAvatar1 => "$basePath/icons.jpeg";
 
 }

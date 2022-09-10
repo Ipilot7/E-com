@@ -19,12 +19,18 @@ abstract class AppTextStyles {
       fontSize: 24.0,
       color: AppColors.metalColor.shade10);
 
-  static TextStyle h3 = TextStyle(
+  static TextStyle h3 = const TextStyle(
       fontFamily: fontFamily,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
       fontSize: 20.0,
-      color: AppColors.metalColor.shade100);
+      color: AppColors.productNames);
+  static TextStyle h3Blue = const TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+      fontSize: 20.0,
+      color: AppColors.primaryBlue);
 
   static TextStyle h4 = const TextStyle(
       fontFamily: fontFamily,

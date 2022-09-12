@@ -82,26 +82,26 @@ abstract class AppTextStyles {
       fontSize: 17.0,
       color: AppColors.metalColor.shade100);
 
-  static TextStyle b2DemiBold = TextStyle(
+  static TextStyle captionNormalRegular = const TextStyle(
       fontFamily: fontFamily,
-      fontWeight: FontWeight.w600,
+      fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
-      fontSize: 15.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 10.0,
+      color: AppColors.productNames);
 
-  static TextStyle b2Medium = TextStyle(
+  static TextStyle captionWhite = TextStyle(
       fontFamily: fontFamily,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
-      fontSize: 15.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 10.0,
+      color: AppColors.metalColor.shade10);
 
-  static TextStyle b5Medium = TextStyle(
+  static TextStyle starMark = const TextStyle(
       fontFamily: fontFamily,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
-      fontSize: 14.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 10.0,
+      color: AppColors.unactTxtColor);
 
   static TextStyle moneyRed = const TextStyle(
       fontFamily: fontFamily,

@@ -57,6 +57,8 @@ class _Icons extends _AssetsHolder {
   String get womanshoes => '$basePath/womanshoes.svg';
   String get womantshirt => '$basePath/womantshirt.svg';
   String get star => '$basePath/star.svg';
+  String get starorange => '$basePath/starorange.svg';
+  String get paper => '$basePath/paper.svg';
 
   // String get appLogoSvg => '$basePath/app_logo_vector.svg';
 }

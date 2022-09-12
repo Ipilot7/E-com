@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:milanas/presentation/pages/childpages/activity.dart';
 import 'package:milanas/presentation/pages/childpages/favorite.dart';
+import 'package:milanas/presentation/pages/childpages/feed.dart';
+import 'package:milanas/presentation/pages/childpages/notification.dart';
 import 'package:milanas/presentation/pages/childpages/offer.dart';
 import 'package:milanas/presentation/pages/childpages/product_detail.dart';
+import 'package:milanas/presentation/pages/childpages/review_product.dart';
+import 'package:milanas/presentation/pages/childpages/write_review.dart';
 import 'package:milanas/presentation/pages/home.dart';
 import 'package:milanas/presentation/pages/childpages/login.dart';
 import 'package:milanas/presentation/pages/childpages/register.dart';
@@ -15,6 +20,11 @@ class Routes {
   static const favorite = '/favorite';
   static const productDetail = '/productDetail';
   static const offer = '/offer';
+  static const feed = '/feed';
+  static const activity = '/activity';
+  static const reviewProduct = '/reviewProduct';
+  static const writeReview = '/writeReview';
+  static const notificationPage = '/notificationPage';
 
   static Route<dynamic> generateRoute(RouteSettings routeSettings) {
     try {
@@ -34,8 +44,21 @@ class Routes {
           return MaterialPageRoute(builder: (context) => const Favorite());
         case productDetail:
           return MaterialPageRoute(builder: (context) => const ProductDetail());
-          case offer:
+        case offer:
           return MaterialPageRoute(builder: (context) => const Offer());
+          case feed:
+          return MaterialPageRoute(builder: (context) => const Feed());
+          case activity:
+          return MaterialPageRoute(builder: (context) => const Activity());
+        case reviewProduct:
+          return MaterialPageRoute(
+              builder: (context) => const ReviewProduct()); //Notification
+
+        case writeReview:
+          return MaterialPageRoute(builder: (context) => const WriteReview());
+
+        case notificationPage:
+          return MaterialPageRoute(builder: (context) =>  const NotificationPage());
 
         default:
           return MaterialPageRoute(builder: (context) => const Login());

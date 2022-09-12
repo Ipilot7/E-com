@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/sale_widget.dart';
 
@@ -30,4 +31,27 @@ List<Widget> imageList = [
   Image.asset(Assets.images.image),
   Image.asset(Assets.images.image),
   Image.asset(Assets.images.image),
+];
+SvgPicture svgstar = SvgPicture.asset(
+  Assets.icons.starorange,
+  width: 16,
+  height: 16,
+);
+List starsList = [
+  const Text('All Review'),
+  Row(
+    children: [svgstar, const SizedBox(width: 10), const Text('1')],
+  ),
+  Row(
+    children: [svgstar, const SizedBox(width: 10), const Text('2')],
+  ),
+  Row(
+    children: [svgstar, const SizedBox(width: 10), const Text('3')],
+  ),
+  Row(
+    children: [svgstar, const SizedBox(width: 10), const Text('4')],
+  ),
+  Row(
+    children: [svgstar, const SizedBox(width: 10), const Text('5')],
+  ),
 ];

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/assets.dart';
+import 'package:milanas/presentation/pages/explore.dart';
 import 'package:milanas/presentation/pages/home.dart';
 import 'package:milanas/presentation/pages/childpages/offer.dart';
 
@@ -15,7 +16,7 @@ class ViewPage extends StatefulWidget {
 class _ViewPageState extends State<ViewPage> {
   List<Widget> pages = [
     Home(),
-    Home(),
+    Explore(),
     Home(),
     Home(),
     Home(),

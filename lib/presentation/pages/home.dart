@@ -5,7 +5,6 @@ import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/config/constants/local_data.dart';
-import 'package:milanas/presentation/components/clock.dart';
 import 'package:milanas/presentation/components/custom_textfield.dart';
 import 'package:milanas/presentation/components/sale_product.dart';
 import 'package:milanas/presentation/components/scrolller.dart';
@@ -18,11 +17,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _current = 0;
-  final CarouselController _controller = CarouselController();
-  var size, height, width;
   @override
   Widget build(BuildContext context) {
+    int _current = 0;
+    final CarouselController _controller = CarouselController();
+    var size, height, width;
     size = MediaQuery.of(context).size;
     height = size.height;
     width = size.width;
@@ -46,7 +45,11 @@ class _HomeState extends State<Home> {
                     Navigator.pushNamed(context, '/favorite');
                   },
                   child: SvgPicture.asset(Assets.icons.love)),
-              SvgPicture.asset(Assets.icons.notification)
+              GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/notificationPage');
+                  },
+                  child: SvgPicture.asset(Assets.icons.notification))
             ],
           ),
         ),

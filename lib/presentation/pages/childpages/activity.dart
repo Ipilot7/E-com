@@ -1,45 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/custom_appbar.dart';
 
-class Offer extends StatefulWidget {
-  const Offer({super.key});
+class Activity extends StatefulWidget {
+  const Activity({super.key});
 
   @override
-  State<Offer> createState() => _OfferState();
+  State<Activity> createState() => _ActivityState();
 }
 
-class _OfferState extends State<Offer> {
+class _ActivityState extends State<Activity> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Offer'),
+            CustomAppbar(text: 'Activity'),
             Expanded(
               child: ListView.builder(
-                itemCount: 5,
+                itemCount: 3,
                 itemBuilder: (context, index) => Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  padding: const EdgeInsets.all(16),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SvgPicture.asset(
-                        Assets.icons.offer,
-                        color: AppColors.primaryBlue,
-                      ),
-                      const SizedBox(width: 12),
+                      SvgPicture.asset(Assets.icons.transaction),
+                      const SizedBox(width: 15),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'The Best Title',
+                              'Transaction Nike Air Zoom Product',
                               style: AppTextStyles.h5,
                             ),
                             const SizedBox(height: 8),
@@ -49,9 +44,9 @@ class _OfferState extends State<Offer> {
                             ),
                             const SizedBox(height: 8),
                             Text(
-                              'April 30, 2014 1:01 PM',
+                              'June 3, 2015 5:06 PM',
                               style: AppTextStyles.captionNormalRegular,
-                            ),
+                            )
                           ],
                         ),
                       )

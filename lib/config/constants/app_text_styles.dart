@@ -18,6 +18,12 @@ abstract class AppTextStyles {
       fontStyle: FontStyle.normal,
       fontSize: 24.0,
       color: AppColors.metalColor.shade10);
+  static TextStyle h2ProductNames = TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+      fontSize: 24.0,
+      color: AppColors.productNames);
 
   static TextStyle h3 = const TextStyle(
       fontFamily: fontFamily,
@@ -65,8 +71,8 @@ abstract class AppTextStyles {
       fontFamily: fontFamily,
       fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
-      fontSize: 16.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 12.0,
+      color: AppColors.metalColor.shade10);
 
   static TextStyle b1Medium = TextStyle(
       fontFamily: fontFamily,
@@ -95,6 +101,13 @@ abstract class AppTextStyles {
       fontStyle: FontStyle.normal,
       fontSize: 10.0,
       color: AppColors.metalColor.shade10);
+
+  static TextStyle captionNormalBold = const TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+      fontSize: 10.0,
+      color: AppColors.unactTxtColor);
 
   static TextStyle starMark = const TextStyle(
       fontFamily: fontFamily,
@@ -151,6 +164,12 @@ abstract class AppTextStyles {
       fontStyle: FontStyle.normal,
       fontSize: 12.0,
       color: AppColors.unactTxtColor);
+  static TextStyle bodyTextNeutral = const TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w400,
+      fontStyle: FontStyle.normal,
+      fontSize: 12.0,
+      color: AppColors.productNames);
 
   static TextStyle buttonText1 = TextStyle(
       fontFamily: fontFamily,

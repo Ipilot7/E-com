@@ -20,16 +20,17 @@ class _LoginState extends State<Login> {
       child: Scaffold(
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
-          child:
-              Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+          child: ListView(children: [
             Padding(
               padding: const EdgeInsets.only(top: 68, bottom: 16),
               child: SvgPicture.asset(Assets.icons.appIcon),
             ),
-            Text('Welcome to E-com', style: AppTextStyles.h4),
+            Center(child: Text('Welcome to E-com', style: AppTextStyles.h4)),
             Padding(
               padding: const EdgeInsets.only(top: 8, bottom: 28),
-              child: Text('Sing in to continue', style: AppTextStyles.bodyText),
+              child: Center(
+                  child: Text('Sing in to continue',
+                      style: AppTextStyles.bodyText)),
             ),
             CustomTextField(
               svgUrl: Assets.icons.message,
@@ -125,9 +126,11 @@ class _LoginState extends State<Login> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 16, bottom: 8),
-              child: Text(
-                'Forgot Password?',
-                style: AppTextStyles.linkSmall,
+              child: Center(
+                child: Text(
+                  'Forgot Password?',
+                  style: AppTextStyles.linkSmall,
+                ),
               ),
             ),
             Row(

@@ -5,14 +5,14 @@ import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/custom_appbar.dart';
 
-class Offer extends StatefulWidget {
-  const Offer({super.key});
+class OfferScreen extends StatefulWidget {
+  const OfferScreen({super.key});
 
   @override
-  State<Offer> createState() => _OfferState();
+  State<OfferScreen> createState() => _OfferScreenState();
 }
 
-class _OfferState extends State<Offer> {
+class _OfferScreenState extends State<OfferScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

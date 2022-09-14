@@ -20,7 +20,7 @@ class _Icons extends _AssetsHolder {
   String get appIcon => '$basePath/app_icon.svg';
   String get splashScreenIcon => '$basePath/splash_screen_icon.svg';
   String get bag => '$basePath/bag.svg';
-  String get bank => '$basePath/Bank.svg';
+  String get bank => '$basePath/bank.svg';
   String get bikiniti => '$basePath/bikiniti.svg';
   String get cart => '$basePath/cart.svg';
   String get date => '$basePath/date.svg';
@@ -28,7 +28,7 @@ class _Icons extends _AssetsHolder {
   String get facebook => '$basePath/facebook.svg';
   String get gender => '$basePath/gender.svg';
   String get google => '$basePath/google.svg';
-  String get group => '$basePath/group.svg';
+  String get check => '$basePath/check.svg';
   String get home => '$basePath/home.svg';
   String get list => '$basePath/list.svg';
   String get location => '$basePath/location.svg';
@@ -59,6 +59,8 @@ class _Icons extends _AssetsHolder {
   String get star => '$basePath/star.svg';
   String get starorange => '$basePath/starorange.svg';
   String get paper => '$basePath/paper.svg';
+  String get order => '$basePath/order.svg';
+  String get calendar => '$basePath/calendar.svg';
 
   // String get appLogoSvg => '$basePath/app_logo_vector.svg';
 }

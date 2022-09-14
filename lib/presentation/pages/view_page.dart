@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/assets.dart';
+import 'package:milanas/presentation/pages/account/account.dart';
+import 'package:milanas/presentation/pages/card.dart';
 import 'package:milanas/presentation/pages/explore.dart';
 import 'package:milanas/presentation/pages/home.dart';
-import 'package:milanas/presentation/pages/childpages/offer.dart';
+import 'package:milanas/presentation/pages/offer.dart';
 
 class ViewPage extends StatefulWidget {
   const ViewPage({Key? key}) : super(key: key);
@@ -15,11 +17,11 @@ class ViewPage extends StatefulWidget {
 
 class _ViewPageState extends State<ViewPage> {
   List<Widget> pages = [
-    Home(),
-    Explore(),
-    Home(),
-    Home(),
-    Home(),
+    const Home(),
+    const Explore(),
+    const CardPage(),
+    const Offer(),
+    const Account(),
   ];
   List<String> menuIcons = [
     Assets.icons.home,
@@ -49,21 +51,21 @@ class _ViewPageState extends State<ViewPage> {
       child: Scaffold(
         body: pages[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
-            showUnselectedLabels: true,
-            selectedItemColor: AppColors.primaryBlue,
-            unselectedItemColor: AppColors.unactTxtColor,
-            currentIndex: _selectedIndex,
-            onTap: _onItemTapped,
-            items: List.generate(
-              menuNames.length,
-              (index) => BottomNavigationBarItem(
-                  icon: SvgPicture.asset(
-                    menuIcons[index],
-                    color:
-                        _selectedIndex == index ? AppColors.primaryBlue : null,
-                  ),
-                  label: menuNames[index]),
-            )),
+          showUnselectedLabels: true,
+          selectedItemColor: AppColors.primaryBlue,
+          unselectedItemColor: AppColors.unactTxtColor,
+          currentIndex: _selectedIndex,
+          onTap: _onItemTapped,
+          items: List.generate(
+            menuNames.length,
+            (index) => BottomNavigationBarItem(
+                icon: SvgPicture.asset(
+                  menuIcons[index],
+                  color: _selectedIndex == index ? AppColors.primaryBlue : null,
+                ),
+                label: menuNames[index]),
+          ),
+        ),
       ),
     );
   }

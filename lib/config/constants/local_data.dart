@@ -19,10 +19,10 @@ List svgList = [
   Assets.icons.womantshirt,
 ];
 List<Widget> listWidget = <Widget>[
-  SaleTable(),
-  SaleTable(),
-  SaleTable(),
-  SaleTable(),
+  const SaleTable(),
+  const SaleTable(),
+  const SaleTable(),
+  const SaleTable(),
 ];
 
 List<Widget> imageList = [

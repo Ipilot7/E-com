@@ -46,7 +46,7 @@ class _BuyWingetState extends State<BuyWinget> {
                       widget.productName,
                       style: AppTextStyles.h6,
                     )),
-                    // Text('Nike Air Zoom Pegasus 36, Miyami'),
+                    
                     GestureDetector(
                         onTap: () {
                           setState(() {

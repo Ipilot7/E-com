@@ -46,7 +46,20 @@ class _AccountState extends State<Account> {
               padding: const EdgeInsets.all(16.0),
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/profile');
+                  switch (index) {
+                    case 0:
+                      Navigator.pushNamed(context, '/profile');
+                      break;
+                    case 1:
+                      Navigator.pushNamed(context, '/order');
+                      break;
+                    case 2:
+                      Navigator.pushNamed(context, '/address');
+                      break;
+                    case 3:
+                      Navigator.pushNamed(context, '/addPayment');
+                      break;
+                  }
                 },
                 child: Row(
                   children: [

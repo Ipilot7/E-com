@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:milanas/presentation/pages/account/childpages/changename.dart';
-import 'package:milanas/presentation/pages/account/childpages/profile.dart';
+import 'package:milanas/presentation/pages/account/order/order.dart';
+import 'package:milanas/presentation/pages/account/order/order_details.dart';
+import 'package:milanas/presentation/pages/account/address/add_address.dart';
+import 'package:milanas/presentation/pages/account/address/address.dart';
+import 'package:milanas/presentation/pages/account/address/delete_address.dart';
+import 'package:milanas/presentation/pages/account/address/edit_address.dart';
+import 'package:milanas/presentation/pages/account/payment/add_card.dart';
+import 'package:milanas/presentation/pages/account/payment/add_payment.dart';
+import 'package:milanas/presentation/pages/account/payment/credit_and_debit.dart';
+import 'package:milanas/presentation/pages/account/profile.dart/childpages/birthday.dart';
+import 'package:milanas/presentation/pages/account/profile.dart/childpages/change_password.dart';
+import 'package:milanas/presentation/pages/account/profile.dart/childpages/changename.dart';
+import 'package:milanas/presentation/pages/account/profile.dart/childpages/email.dart';
+import 'package:milanas/presentation/pages/account/profile.dart/childpages/gender.dart';
+import 'package:milanas/presentation/pages/account/profile.dart/childpages/phone_number.dart';
+import 'package:milanas/presentation/pages/account/profile.dart/profile.dart';
 import 'package:milanas/presentation/pages/childpages/activity.dart';
 import 'package:milanas/presentation/pages/childpages/choose_card.dart';
 import 'package:milanas/presentation/pages/childpages/favorite.dart';
@@ -16,7 +30,6 @@ import 'package:milanas/presentation/pages/childpages/write_review.dart';
 import 'package:milanas/presentation/pages/home.dart';
 import 'package:milanas/presentation/pages/childpages/login.dart';
 import 'package:milanas/presentation/pages/childpages/register.dart';
-import 'package:milanas/presentation/pages/offer.dart';
 import 'package:milanas/presentation/pages/view_page.dart';
 
 class Routes {
@@ -38,6 +51,20 @@ class Routes {
   static const successScreen = '/successScreen';
   static const profile = '/profile';
   static const changeName = '/changeName';
+  static const changePassword = '/changePassword';
+  static const gender = '/gender';
+  static const birthday = '/birthday';
+  static const email = '/email';
+  static const phoneNumber = '/phoneNumber';
+  static const order = '/order';
+  static const orderDetails = '/orderDetails';
+  static const address = '/address';
+  static const addAddress = '/addAddress';
+  static const editAddress = '/editAddress';
+  static const deleteAddress = '/deleteAddress';
+  static const creditCardAndDebit = '/creditCardAndDebit';
+  static const addPayment = '/addPayment';
+  static const addCard = '/addCard';
 
   static Route<dynamic> generateRoute(RouteSettings routeSettings) {
     try {
@@ -68,11 +95,9 @@ class Routes {
         case paymentMethod:
           return MaterialPageRoute(builder: (context) => const PaymentMethod());
         case reviewProduct:
-          return MaterialPageRoute(
-              builder: (context) => const ReviewProduct()); //Notification
+          return MaterialPageRoute(builder: (context) => const ReviewProduct());
         case chooseCard:
           return MaterialPageRoute(builder: (context) => const ChooseCard());
-
         case writeReview:
           return MaterialPageRoute(builder: (context) => const WriteReview());
         case notificationPage:
@@ -84,7 +109,36 @@ class Routes {
           return MaterialPageRoute(builder: (context) => const Profile());
         case changeName:
           return MaterialPageRoute(builder: (context) => const ChangeName());
-
+        case gender:
+          return MaterialPageRoute(builder: (context) => const Gender());
+        case birthday:
+          return MaterialPageRoute(builder: (context) => const Birthday());
+        case email:
+          return MaterialPageRoute(builder: (context) => const Email());
+        case phoneNumber:
+          return MaterialPageRoute(builder: (context) => const PhoneNumber());
+        case changePassword:
+          return MaterialPageRoute(
+              builder: (context) => const ChangePassword());
+        case order:
+          return MaterialPageRoute(builder: (context) => const Order());
+        case orderDetails:
+          return MaterialPageRoute(builder: (context) => const OrderDetails());
+        case address:
+          return MaterialPageRoute(builder: (context) => const Address());
+        case addAddress:
+          return MaterialPageRoute(builder: (context) => const AddAddress());
+        case deleteAddress:
+          return MaterialPageRoute(builder: (context) => const DeleteAddress());
+        case editAddress:
+          return MaterialPageRoute(builder: (context) => const EditAddress());
+        case creditCardAndDebit:
+          return MaterialPageRoute(
+              builder: (context) => const CreditCardAndDebit());
+        case addPayment:
+          return MaterialPageRoute(builder: (context) => const AddPayment());
+           case addCard:
+          return MaterialPageRoute(builder: (context) => const AddCard());
         default:
           return MaterialPageRoute(builder: (context) => const Login());
       }

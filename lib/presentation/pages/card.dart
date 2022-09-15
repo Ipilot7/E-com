@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
@@ -171,18 +170,20 @@ class _CardPageState extends State<CardPage> {
           ],
         ),
         Positioned(
-            left: 16,
-            bottom: 16,
-            right: 16,
-            child: ElevatedButton(
-                style: buttonStyle(
-                    color: AppColors.primaryBlue,
-                    borderRadius: 5,
-                    padding: const EdgeInsets.all(16)),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/skipTo');
-                },
-                child: Text('Check Out', style: AppTextStyles.buttonText1)))
+          left: 16,
+          bottom: 16,
+          right: 16,
+          child: ElevatedButton(
+            style: buttonStyle(
+                color: AppColors.primaryBlue,
+                borderRadius: 5,
+                padding: const EdgeInsets.all(16)),
+            onPressed: () {
+              Navigator.pushNamed(context, '/skipTo');
+            },
+            child: Text('Check Out', style: AppTextStyles.buttonText1),
+          ),
+        ),
       ],
     );
   }

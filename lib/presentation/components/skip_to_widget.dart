@@ -29,29 +29,36 @@ class SkipToWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text('Priscekila', style: AppTextStyles.h5),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Text(
             '3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States',
             style: AppTextStyles.bodyText,
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Text('+99 1234567890', style: AppTextStyles.bodyText),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Row(
             children: [
               ElevatedButton(
                   style: buttonStyle(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 24, vertical: 16),
                       color: AppColors.primaryBlue,
                       borderRadius: 5),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/editAddress');
+                  },
                   child: Text(
                     'Edit',
                     style: AppTextStyles.buttonText1,
                   )),
-              SizedBox(width: 24),
-              SvgPicture.asset(Assets.icons.trash)
+              const SizedBox(width: 24),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/deleteAddress');
+                },
+                child: SvgPicture.asset(Assets.icons.trash),
+              ),
             ],
           )
         ],

@@ -21,10 +21,10 @@ class _Icons extends _AssetsHolder {
   String get splashScreenIcon => '$basePath/splash_screen_icon.svg';
   String get bag => '$basePath/bag.svg';
   String get bank => '$basePath/bank.svg';
-  String get bikiniti => '$basePath/bikiniti.svg';
+  String get womanbikiniti => '$basePath/womanbikiniti.svg';
   String get cart => '$basePath/cart.svg';
   String get date => '$basePath/date.svg';
-  String get dress => '$basePath/dress.svg';
+  String get womandress => '$basePath/womandress.svg';
   String get facebook => '$basePath/facebook.svg';
   String get gender => '$basePath/gender.svg';
   String get google => '$basePath/google.svg';
@@ -36,8 +36,9 @@ class _Icons extends _AssetsHolder {
   String get lovered => '$basePath/love_red.svg';
   String get manbag => '$basePath/manbag.svg';
   String get manpants => '$basePath/manpants.svg';
-  String get manshoes => '$basePath/manshoes.svg';
   String get manunderwear => '$basePath/manunderwear.svg';
+  String get manboots => '$basePath/manboots.svg';
+  String get manshirt => '$basePath/manshirt.svg';
   String get message => '$basePath/message.svg';
   String get mic => '$basePath/mic.svg';
   String get notification => '$basePath/notification.svg';
@@ -47,8 +48,8 @@ class _Icons extends _AssetsHolder {
   String get paypal => '$basePath/paypal.svg';
   String get phone => '$basePath/phone.svg';
   String get search => '$basePath/search.svg';
-  String get shirt => '$basePath/shirt.svg';
-  String get skirt => '$basePath/skirt.svg';
+  String get mantshirt => '$basePath/mantshirt.svg';
+  String get womanskirt => '$basePath/womanskirt.svg';
   String get transaction => '$basePath/transaction.svg';
   String get trash => '$basePath/trash.svg';
   String get user => '$basePath/user.svg';

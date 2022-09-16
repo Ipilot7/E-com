@@ -12,6 +12,7 @@ class SkipTo extends StatefulWidget {
 }
 
 class _SkipToState extends State<SkipTo> {
+  bool ontap = false;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -40,8 +41,8 @@ class _SkipToState extends State<SkipTo> {
                     'Skip To',
                     style: AppTextStyles.h4,
                   ),
-                  Spacer(),
-                  Icon(
+                  const Spacer(),
+                  const Icon(
                     Icons.add_outlined,
                     color: AppColors.primaryBlue,
                   ),
@@ -53,17 +54,30 @@ class _SkipToState extends State<SkipTo> {
                 children: [
                   ListView(
                     children: [
-                      SkipToWidget(
-                        name: 'Priscekila',
-                        text:
-                            '3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States',
-                        number: '+99 1234567890',
-                      ),
-                      SkipToWidget(
-                        name: 'Priscekila',
-                        text:
-                            '3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States',
-                        number: '+99 1234567890',
+                      Column(
+                        children: List.generate(
+                          3,
+                          (index) => GestureDetector(
+                            onTap: () {
+                              if (ontap) {
+                                setState(() {
+                                  ontap = false;
+                                });
+                              } else {
+                                setState(() {
+                                  ontap = true;
+                                });
+                              }
+                            },
+                            child: SkipToWidget(
+                              name: 'Priscekila',
+                              text:
+                                  '3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States',
+                              number: '+99 1234567890',
+                              ontapCheck: ontap,
+                            ),
+                          ),
+                        ),
                       )
                     ],
                   ),

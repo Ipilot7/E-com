@@ -13,6 +13,7 @@ class Address extends StatefulWidget {
 }
 
 class _AddressState extends State<Address> {
+  bool ontab = false;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -29,12 +30,14 @@ class _AddressState extends State<Address> {
                     text:
                         '3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States',
                     number: '+99 1234567890',
+                    ontapCheck: ontab,
                   ),
                   SkipToWidget(
                     name: 'Priscekila',
                     text:
                         '3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States',
                     number: '+99 1234567890',
+                    ontapCheck: ontab,
                   )
                 ],
               ),

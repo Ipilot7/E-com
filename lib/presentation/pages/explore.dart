@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
@@ -37,16 +36,8 @@ class _ExploreState extends State<Explore> {
                 child: CustomTextField(
                     svgUrl: Assets.icons.search, labelText: 'Search Product'),
               ),
-              GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/favorite');
-                  },
-                  child: Icon(Icons.sort)),
-              GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/notificationPage');
-                  },
-                  child: Icon(Icons.filter_alt_sharp))
+              GestureDetector(onTap: () {}, child: Icon(Icons.sort)),
+              GestureDetector(onTap: () {}, child: Icon(Icons.filter_alt_sharp))
             ],
           ),
         ),
@@ -64,8 +55,9 @@ class _ExploreState extends State<Explore> {
                     runSpacing: 16,
                     spacing: 10,
                     children: List.generate(
-                      6,
+                      manFashion.length,
                       (index) => Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
                             margin: const EdgeInsets.only(left: 12, bottom: 8),
@@ -75,10 +67,15 @@ class _ExploreState extends State<Explore> {
                                 border:
                                     Border.all(color: AppColors.unactTxtColor)),
                             child: SvgPicture.asset(
-                              Assets.icons.manpants,
+                              manFashion[index],
                             ),
                           ),
-                          Text('Manshirt'),
+                          Container(
+                              width: width * .2,
+                              child: Text(
+                                manFashionName[index],
+                                textAlign: TextAlign.center,
+                              )),
                         ],
                       ),
                     ),
@@ -97,7 +94,7 @@ class _ExploreState extends State<Explore> {
                     runSpacing: 16,
                     spacing: 10,
                     children: List.generate(
-                      6,
+                      womanFasion.length,
                       (index) => Column(
                         children: [
                           Container(
@@ -108,10 +105,15 @@ class _ExploreState extends State<Explore> {
                                 border:
                                     Border.all(color: AppColors.unactTxtColor)),
                             child: SvgPicture.asset(
-                              Assets.icons.manbag,
+                              womanFasion[index],
                             ),
                           ),
-                          Text('Manshirt'),
+                          Container(
+                              width: width * .2,
+                              child: Text(
+                                womanFashionName[index],
+                                textAlign: TextAlign.center,
+                              )),
                         ],
                       ),
                     ),

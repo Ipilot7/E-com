@@ -7,6 +7,7 @@ import 'package:milanas/presentation/pages/account/address/delete_address.dart';
 import 'package:milanas/presentation/pages/account/address/edit_address.dart';
 import 'package:milanas/presentation/pages/account/payment/add_card.dart';
 import 'package:milanas/presentation/pages/account/payment/add_payment.dart';
+import 'package:milanas/presentation/pages/account/payment/card_data.dart';
 import 'package:milanas/presentation/pages/account/payment/credit_and_debit.dart';
 import 'package:milanas/presentation/pages/account/profile.dart/childpages/birthday.dart';
 import 'package:milanas/presentation/pages/account/profile.dart/childpages/change_password.dart';
@@ -65,6 +66,7 @@ class Routes {
   static const creditCardAndDebit = '/creditCardAndDebit';
   static const addPayment = '/addPayment';
   static const addCard = '/addCard';
+  static const cardData = '/cardData';
 
   static Route<dynamic> generateRoute(RouteSettings routeSettings) {
     try {
@@ -139,6 +141,8 @@ class Routes {
           return MaterialPageRoute(builder: (context) => const AddPayment());
            case addCard:
           return MaterialPageRoute(builder: (context) => const AddCard());
+           case cardData:
+          return MaterialPageRoute(builder: (context) => const CardData());
         default:
           return MaterialPageRoute(builder: (context) => const Login());
       }

@@ -4,20 +4,54 @@ import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/sale_widget.dart';
 
 List svgList = [
-  Assets.icons.shirt,
-  Assets.icons.skirt,
-  Assets.icons.bag,
-  Assets.icons.dress,
+  Assets.icons.manshirt,
+  Assets.icons.womanskirt,
+  Assets.icons.womandress,
   Assets.icons.manbag,
-  Assets.icons.bikiniti,
+  Assets.icons.womanbikiniti,
   Assets.icons.manpants,
-  Assets.icons.manshoes,
+  Assets.icons.manboots,
   Assets.icons.manunderwear,
   Assets.icons.womanbag,
   Assets.icons.womanpants,
   Assets.icons.womanshoes,
   Assets.icons.womantshirt,
 ];
+List manFashion = [
+  Assets.icons.manshirt,
+  Assets.icons.manbag,
+  Assets.icons.mantshirt,
+  Assets.icons.manboots,
+  Assets.icons.manpants,
+  Assets.icons.manunderwear,
+];
+List manFashionName = [
+  'Man Shirt',
+  'Man Work Equipment',
+  'Man T-Shirt',
+  'Man Shoes',
+  'Man Pants',
+  'Man Underwear'
+];
+List womanFashionName = [
+  'Dress',
+  'Woman T-Shirt',
+  'Woman Pants',
+  'Skirt',
+  'Woman Bag',
+  'High Heels',
+  'Bikini'
+];
+List womanFasion = [
+  Assets.icons.womandress,
+  Assets.icons.womantshirt,
+  Assets.icons.womanpants,
+  Assets.icons.womanskirt,
+  Assets.icons.womanbag,
+  Assets.icons.womanshoes,
+  Assets.icons.womanbikiniti,
+];
+
 List<Widget> listWidget = <Widget>[
   const SaleTable(),
   const SaleTable(),

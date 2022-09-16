@@ -1,29 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
+import 'package:milanas/presentation/components/card_widget.dart';
 import 'package:milanas/presentation/components/constants.dart';
 import 'package:milanas/presentation/components/custom_appbar.dart';
 import 'package:milanas/presentation/pages/account/components/textfield_zero.dart';
 
-class AddCard extends StatefulWidget {
-  const AddCard({super.key});
+class CardData extends StatefulWidget {
+  const CardData({super.key});
 
   @override
-  State<AddCard> createState() => _AddCardState();
+  State<CardData> createState() => _CardDataState();
 }
 
-class _AddCardState extends State<AddCard> {
-  @override
+class _CardDataState extends State<CardData> {
   Widget build(BuildContext context) {
     var size, height, width;
     size = MediaQuery.of(context).size;
     height = size.height;
     width = size.width;
+
     return SafeArea(
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Add Card'),
+            CustomAppbar(text: 'Lailyfa Febrina Card'),
+            const CardWidget(),
             Expanded(
               child: Stack(
                 children: [
@@ -67,10 +69,8 @@ class _AddCardState extends State<AddCard> {
                           color: AppColors.primaryBlue,
                           borderRadius: 5,
                           padding: const EdgeInsets.all(16)),
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/cardData');
-                      },
-                      child: Text('Add Card', style: AppTextStyles.buttonText1),
+                      onPressed: () {},
+                      child: Text('Save', style: AppTextStyles.buttonText1),
                     ),
                   )
                 ],

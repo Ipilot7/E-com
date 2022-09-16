@@ -10,11 +10,13 @@ class SkipToWidget extends StatelessWidget {
     required this.name,
     required this.text,
     required this.number,
+    required this.ontapCheck,
     Key? key,
   }) : super(key: key);
   String name;
   String text;
   String number;
+  bool ontapCheck;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,8 @@ class SkipToWidget extends StatelessWidget {
       margin: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
-        border: Border.all(color: AppColors.neutralLight),
+        border: Border.all(
+            color: ontapCheck ? AppColors.primaryBlue : AppColors.neutralLight),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

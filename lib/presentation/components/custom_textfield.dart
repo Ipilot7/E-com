@@ -4,13 +4,13 @@ import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField({
+  const CustomTextField({
     required this.svgUrl,
     required this.labelText,
     Key? key,
   }) : super(key: key);
-  String svgUrl;
-  String labelText;
+  final String svgUrl;
+  final String labelText;
 
   @override
   Widget build(BuildContext context) {

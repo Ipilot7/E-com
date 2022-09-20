@@ -19,7 +19,7 @@ class _ChangeNameState extends State<ChangeName> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Name'),
+            const CustomAppbar(text: 'Name'),
             Expanded(
               child: Stack(
                 children: [

@@ -85,8 +85,8 @@ class _LoginState extends State<Login> {
               ],
             ),
             Container(
-              margin: EdgeInsets.only(bottom: 8, top: 16),
-              padding: EdgeInsets.all(16),
+              margin: const EdgeInsets.only(bottom: 8, top: 16),
+              padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
                 border: Border.all(color: AppColors.neutralLight),

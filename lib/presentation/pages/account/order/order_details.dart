@@ -1,8 +1,10 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
-import 'package:milanas/config/constants/assets.dart';
+
 import 'package:milanas/presentation/components/constants.dart';
 
 import 'package:milanas/presentation/components/custom_appbar.dart';
@@ -18,19 +20,18 @@ class OrderDetails extends StatefulWidget {
 class _OrderDetailsState extends State<OrderDetails> {
   @override
   Widget build(BuildContext context) {
-    var size, height, width;
+   var size, width;
     size = MediaQuery.of(context).size;
-    height = size.height;
     width = size.width;
     return SafeArea(
         child: Scaffold(
       body: Column(children: [
-        CustomAppbar(text: 'Order Details'),
+        const CustomAppbar(text: 'Order Details'),
         Expanded(
             child: ListView(
           children: [
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -38,14 +39,14 @@ class _OrderDetailsState extends State<OrderDetails> {
                   Column(
                     children: List.generate(
                       2,
-                      (index) => OrderDetailWidget(),
+                      (index) => const OrderDetailWidget(),
                     ),
                   ),
-                  SizedBox(height: 24),
+                  const SizedBox(height: 24),
                   Text('Shipping Details', style: AppTextStyles.h5),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
-                    padding: EdgeInsets.all(16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       border: Border.all(color: AppColors.neutralLight),
                       borderRadius: BorderRadius.circular(5),
@@ -58,33 +59,33 @@ class _OrderDetailsState extends State<OrderDetails> {
                           children: [
                             Text('Date Shipping',
                                 style: AppTextStyles.bodyText),
-                            Text('January 16, 2020')
+                            const Text('January 16, 2020')
                           ],
                         ),
-                        SizedBox(height: 12),
+                        const SizedBox(height: 12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text('Shipping', style: AppTextStyles.bodyText),
-                            Text('POS Reggular')
+                            const Text('POS Reggular')
                           ],
                         ),
-                        SizedBox(height: 12),
+                        const SizedBox(height: 12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text('No. Resi', style: AppTextStyles.bodyText),
-                            Text('000192848573')
+                            const Text('000192848573')
                           ],
                         ),
-                        SizedBox(height: 12),
+                        const SizedBox(height: 12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text('Address', style: AppTextStyles.bodyText),
                             SizedBox(
                                 width: width * .5,
-                                child: Text(
+                                child: const Text(
                                     textAlign: TextAlign.end,
                                     '2727 New  Owerri, Owerri, Imo State 78410'))
                           ],
@@ -92,11 +93,11 @@ class _OrderDetailsState extends State<OrderDetails> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 46),
+                  const SizedBox(height: 46),
                   Text('Payment Details', style: AppTextStyles.h5),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
-                    padding: EdgeInsets.all(16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       border: Border.all(color: AppColors.neutralLight),
                       borderRadius: BorderRadius.circular(5),
@@ -108,29 +109,29 @@ class _OrderDetailsState extends State<OrderDetails> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text('Items (3)', style: AppTextStyles.bodyText),
-                            Text('\$598.86')
+                            const Text('\$598.86')
                           ],
                         ),
-                        SizedBox(height: 12),
+                        const SizedBox(height: 12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text('Shipping', style: AppTextStyles.bodyText),
-                            Text('\$40.00')
+                            const Text('\$40.00')
                           ],
                         ),
-                        SizedBox(height: 12),
+                        const SizedBox(height: 12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text('Import charges',
                                 style: AppTextStyles.bodyText),
-                            Text('\$128.00')
+                            const Text('\$128.00')
                           ],
                         ),
-                        SizedBox(height: 12),
-                        Divider(color: AppColors.unactTxtColor),
-                        SizedBox(height: 12),
+                        const SizedBox(height: 12),
+                        const Divider(color: AppColors.unactTxtColor),
+                        const SizedBox(height: 12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -159,7 +160,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                 ],
               ),
             )

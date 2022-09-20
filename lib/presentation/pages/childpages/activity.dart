@@ -18,7 +18,7 @@ class _ActivityState extends State<Activity> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Activity'),
+            const CustomAppbar(text: 'Activity'),
             Expanded(
               child: ListView.builder(
                 itemCount: 3,

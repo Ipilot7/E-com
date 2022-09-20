@@ -5,10 +5,10 @@ import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
 
 class BuyWinget extends StatefulWidget {
- BuyWinget({required this.image, required this.productName, required this.price, super.key});
-  String image;
-  String productName;
-  double price;
+ const BuyWinget({required this.image, required this.productName, required this.price, super.key});
+ final String image;
+  final String productName;
+ final  double price;
 
   @override
   State<BuyWinget> createState() => _BuyWingetState();
@@ -97,7 +97,7 @@ class _BuyWingetState extends State<BuyWinget> {
                             padding: const EdgeInsets.symmetric(horizontal: 18),
                             color: AppColors.neutralLight,
                             child: Text(
-                              '${count}',
+                              '$count',
                               style: AppTextStyles.bodyText,
                             ),
                           ),

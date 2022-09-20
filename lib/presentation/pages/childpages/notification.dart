@@ -24,7 +24,7 @@ class _NotificationPageState extends State<NotificationPage> {
         child: Scaffold(
       body: Column(
         children: [
-          CustomAppbar(text: 'Notification'),
+          const CustomAppbar(text: 'Notification'),
           Column(
             children: List.generate(
               notifCategNameList.length,

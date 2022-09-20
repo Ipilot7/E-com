@@ -20,7 +20,7 @@ class _EmailState extends State<Email> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Email'),
+            const CustomAppbar(text: 'Email'),
             Expanded(
               child: Stack(
                 children: [
@@ -63,6 +63,6 @@ class _EmailState extends State<Email> {
         ),
       ),
     );
-    ;
+    
   }
 }

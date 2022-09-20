@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/custom_appbar.dart';
@@ -20,7 +17,7 @@ class _FeedState extends State<Feed> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Feed'),
+            const CustomAppbar(text: 'Feed'),
             Expanded(
                 child: ListView.builder(
                     itemCount: 3,
@@ -51,7 +48,7 @@ class _FeedState extends State<Feed> {
                                       'Nike Air Zoom Pegasus 36 Miami - Special For your Activity',
                                       style: AppTextStyles.bodyText,
                                     ),
-                                    SizedBox(height: 4),
+                                    const SizedBox(height: 4),
                                     Text(
                                       'June 3, 2015 5:06 PM',
                                       style: AppTextStyles.captionNormalRegular,

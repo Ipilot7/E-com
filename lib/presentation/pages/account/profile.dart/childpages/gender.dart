@@ -24,7 +24,7 @@ class _GenderState extends State<Gender> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Gender'),
+            const CustomAppbar(text: 'Gender'),
             Expanded(
               child: Stack(
                 children: [

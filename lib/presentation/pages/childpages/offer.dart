@@ -19,7 +19,7 @@ class _OfferScreenState extends State<OfferScreen> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Offer'),
+            const CustomAppbar(text: 'Offer'),
             Expanded(
               child: ListView.builder(
                 itemCount: 5,

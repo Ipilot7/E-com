@@ -1,4 +1,4 @@
-import 'package:carousel_slider/carousel_slider.dart';
+// ignore_for_file: prefer_typing_uninitialized_variables
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
@@ -28,8 +28,6 @@ class _ProductDetailState extends State<ProductDetail> {
     Colors.green,
     Colors.indigo
   ];
-  final CarouselController _controller = CarouselController();
-  int _current = 0;
   var size, height, width;
   @override
   Widget build(BuildContext context) {

@@ -29,7 +29,7 @@ class SaleProductStarsWidget extends StatelessWidget {
           Row(
               children: List.generate(
                   5, (index) => SvgPicture.asset(Assets.icons.star))),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Align(
             alignment: Alignment.centerLeft,
             child: Text('\$299,43', style: AppTextStyles.moneyBlue),

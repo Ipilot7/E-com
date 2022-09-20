@@ -19,7 +19,7 @@ class _CreditCardAndDebitState extends State<CreditCardAndDebit> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Credit Card And Debit'),
+            const CustomAppbar(text: 'Credit Card And Debit'),
             Expanded(
               child: Stack(
                 children: [

@@ -4,15 +4,15 @@ import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 
 class ProfileWidget extends StatelessWidget {
-  ProfileWidget({
+  const ProfileWidget({
     required this.image,
     required this.name,
     required this.subName,
     Key? key,
   }) : super(key: key);
-  String image;
-  String name;
-  String subName;
+  final String image;
+  final String name;
+  final String subName;
 
   @override
   Widget build(BuildContext context) {

@@ -14,28 +14,31 @@ class _AddPaymentState extends State<AddPayment> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-        child: Scaffold(
-      body: Column(children: [
-        CustomAppbar(text: 'Payment'),
-        InkWell(
-          onTap: () {
-            Navigator.pushNamed(context, '/creditCardAndDebit');
-          },
-          child: ListTile(
-            leading: SvgPicture.asset(Assets.icons.payment),
-            title: Text('Credit Card Or Debit'),
-          ),
+      child: Scaffold(
+        body: Column(
+          children: [
+            const CustomAppbar(text: 'Payment'),
+            InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, '/creditCardAndDebit');
+              },
+              child: ListTile(
+                leading: SvgPicture.asset(Assets.icons.payment),
+                title: const Text('Credit Card Or Debit'),
+              ),
+            ),
+            ListTile(
+              leading: SvgPicture.asset(Assets.icons.paypal),
+              title: const Text('Paypal'),
+            ),
+            ListTile(
+              leading: SvgPicture.asset(Assets.icons.bank),
+              title: const Text('Bank Transfer'),
+            )
+          ],
         ),
-        ListTile(
-          leading: SvgPicture.asset(Assets.icons.paypal),
-          title: Text('Paypal'),
-        ),
-        ListTile(
-          leading: SvgPicture.asset(Assets.icons.bank),
-          title: Text('Bank Transfer'),
-        )
-      ]),
-    ));
-    ;
+      ),
+    );
+    
   }
 }

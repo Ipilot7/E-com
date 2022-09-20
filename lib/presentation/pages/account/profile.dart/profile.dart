@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/custom_appbar.dart';
-import 'package:milanas/presentation/components/profileWidget.dart';
+import 'package:milanas/presentation/components/profilewidget.dart';
 
 
 class Profile extends StatefulWidget {
@@ -39,7 +39,7 @@ class _ProfileState extends State<Profile> {
     return SafeArea(
         child: Scaffold(
       body: Column(children: [
-        CustomAppbar(text: 'Profile'),
+        const CustomAppbar(text: 'Profile'),
         Row(
           children: [
             ClipRRect(

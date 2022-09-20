@@ -5,14 +5,14 @@ import 'package:milanas/config/constants/app_text_styles.dart';
 
 
 class NotificationsWidget extends StatelessWidget {
-  NotificationsWidget({required this.icon,
+  const NotificationsWidget({required this.icon,
     required this.typeNotification,
     required this.countNotifications,
     Key? key,
   }) : super(key: key);
-  String icon;
-  String typeNotification;
-  String countNotifications;
+  final String icon;
+  final String typeNotification;
+  final String countNotifications;
 
   @override
   Widget build(BuildContext context) {

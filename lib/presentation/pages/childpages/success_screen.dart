@@ -23,7 +23,7 @@ class _SuccessScreenState extends State<SuccessScreen> {
               const SizedBox(height: 248),
               Container(
                   padding: const EdgeInsets.all(25),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: AppColors.primaryBlue,
                     shape: BoxShape.circle,
                   ),

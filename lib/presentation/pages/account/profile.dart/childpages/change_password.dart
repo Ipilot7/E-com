@@ -20,7 +20,7 @@ class _ChangePasswordState extends State<ChangePassword> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Change Password'),
+            const CustomAppbar(text: 'Change Password'),
             Expanded(
               child: Stack(
                 children: [

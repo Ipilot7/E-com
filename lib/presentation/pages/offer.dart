@@ -1,8 +1,9 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/cupertino.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/config/constants/assets.dart';
-import 'package:milanas/presentation/components/custom_appbar.dart';
 import 'package:milanas/presentation/components/sale_widget.dart';
 
 class Offer extends StatefulWidget {
@@ -15,9 +16,8 @@ class Offer extends StatefulWidget {
 class _OfferState extends State<Offer> {
   @override
   Widget build(BuildContext context) {
-    var size, height, width;
+    var size, width;
     size = MediaQuery.of(context).size;
-    height = size.height;
     width = size.width;
     return Column(
       children: [
@@ -49,7 +49,7 @@ class _OfferState extends State<Offer> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
+                  SizedBox(
                     width: width * .45,
                     child: Text('Use “MEGSL” Cupon For Get 90%off',
                         style: AppTextStyles.buttonText1),
@@ -58,7 +58,7 @@ class _OfferState extends State<Offer> {
               ),
             ),
             const SaleTable(),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Center(
               child: Stack(
                 children: [

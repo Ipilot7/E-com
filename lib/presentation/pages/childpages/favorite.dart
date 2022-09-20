@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
-import 'package:milanas/config/constants/assets.dart';
-import 'package:milanas/presentation/components/sale_product.dart';
 import 'package:milanas/presentation/components/sale_product_favorite.dart';
-import 'package:milanas/presentation/components/sale_product_stars.dart';
-import 'package:milanas/presentation/components/sale_widget.dart';
 
 class Favorite extends StatefulWidget {
   const Favorite({super.key});
@@ -66,6 +61,6 @@ class _FavoriteState extends State<Favorite> {
         ),
       ),
     );
-    ;
+    
   }
 }

@@ -45,7 +45,7 @@ class _OrderDetailWidgetState extends State<OrderDetailWidget> {
                         style: AppTextStyles.h6,
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     GestureDetector(
                         onTap: () {
                           setState(() {
@@ -61,7 +61,7 @@ class _OrderDetailWidgetState extends State<OrderDetailWidget> {
                             : SvgPicture.asset(Assets.icons.love)),
                   ],
                 ),
-                SizedBox(height: 18),
+                const SizedBox(height: 18),
                 Align(
                   alignment: Alignment.bottomLeft,
                   child: Text(

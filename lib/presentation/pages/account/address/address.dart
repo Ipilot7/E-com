@@ -19,7 +19,7 @@ class _AddressState extends State<Address> {
     return SafeArea(
         child: Scaffold(
       body: Column(children: [
-        CustomAppbar(text: 'Address'),
+        const CustomAppbar(text: 'Address'),
         Expanded(
           child: Stack(
             children: [

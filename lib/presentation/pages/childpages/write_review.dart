@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
@@ -22,7 +19,7 @@ class _WriteReviewState extends State<WriteReview> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Write Review'),
+            const CustomAppbar(text: 'Write Review'),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(

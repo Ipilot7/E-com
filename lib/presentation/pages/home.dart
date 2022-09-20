@@ -1,4 +1,4 @@
-import 'package:carousel_slider/carousel_slider.dart';
+// ignore_for_file: prefer_typing_uninitialized_variables
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
@@ -19,11 +19,9 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    int _current = 0;
-    final CarouselController _controller = CarouselController();
-    var size, height, width;
+    
+    var size, width;
     size = MediaQuery.of(context).size;
-    height = size.height;
     width = size.width;
     return Column(
       children: [
@@ -95,7 +93,7 @@ class _HomeState extends State<Home> {
                           svgList[index],
                         ),
                       ),
-                      Text('Manshirt')
+                      const Text('Manshirt')
                     ],
                   ),
                 ),
@@ -125,7 +123,7 @@ class _HomeState extends State<Home> {
                         onTap: () {
                           Navigator.pushNamed(context, '/productDetail');
                         },
-                        child: SaleProductWidget())),
+                        child: const SaleProductWidget())),
               ),
               Padding(
                 padding: const EdgeInsets.only(
@@ -148,7 +146,7 @@ class _HomeState extends State<Home> {
                     scrollDirection: Axis.horizontal,
                     padding: const EdgeInsets.only(right: 12),
                     itemCount: svgList.length,
-                    itemBuilder: (context, index) => SaleProductWidget()),
+                    itemBuilder: (context, index) => const SaleProductWidget()),
               ),
               ClipRRect(
                 borderRadius: BorderRadius.circular(5),

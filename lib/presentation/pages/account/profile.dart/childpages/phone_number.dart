@@ -20,7 +20,7 @@ class _PhoneNumberState extends State<PhoneNumber> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Phone Number'),
+            const CustomAppbar(text: 'Phone Number'),
             Expanded(
               child: Stack(
                 children: [
@@ -62,6 +62,6 @@ class _PhoneNumberState extends State<PhoneNumber> {
         ),
       ),
     );
-    ;
+    
   }
 }

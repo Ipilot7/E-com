@@ -24,8 +24,8 @@ class _ReviewProductState extends State<ReviewProduct> {
           children: [
             Column(
               children: [
-                CustomAppbar(
-                  text: '5 Review',
+                const CustomAppbar(
+                  text: '5 Review'
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
@@ -50,7 +50,7 @@ class _ReviewProductState extends State<ReviewProduct> {
                 Expanded(
                     child: ListView.builder(
                         scrollDirection: Axis.vertical,
-                        physics: BouncingScrollPhysics(),
+                        physics: const BouncingScrollPhysics(),
                         itemCount: 10,
                         itemBuilder: (context, index) => const ReviewWidget())),
 
@@ -63,7 +63,7 @@ class _ReviewProductState extends State<ReviewProduct> {
                 bottom: 16,
                 child: ElevatedButton(
                     style: buttonStyle(
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         color: AppColors.primaryBlue,
                         borderRadius: 5),
                     onPressed: () {

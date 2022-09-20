@@ -23,12 +23,11 @@ class ExpandableTextState extends State<ExpandableText> {
 
   @override
   Widget build(BuildContext context) {
-    final DefaultTextStyle defaultTextStyle = DefaultTextStyle.of(context);
     const colorClickableText = Colors.blue;
     const widgetColor = Colors.black;
     TextSpan link = TextSpan(
         text: _readMore ? "...показать еще" : " читать дальше",
-        style: TextStyle(
+        style: const TextStyle(
           color: colorClickableText,
         ),
         recognizer: TapGestureRecognizer()..onTap = _onTapLink);
@@ -65,7 +64,7 @@ class ExpandableTextState extends State<ExpandableText> {
         if (textPainter.didExceedMaxLines) {
           textSpan = TextSpan(
             text: _readMore ? widget.text.substring(0, endIndex) : widget.text,
-            style: TextStyle(
+            style: const TextStyle(
               color: widgetColor,
             ),
             children: <TextSpan>[link],

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
@@ -36,8 +38,8 @@ class _ExploreState extends State<Explore> {
                 child: CustomTextField(
                     svgUrl: Assets.icons.search, labelText: 'Search Product'),
               ),
-              GestureDetector(onTap: () {}, child: Icon(Icons.sort)),
-              GestureDetector(onTap: () {}, child: Icon(Icons.filter_alt_sharp))
+              GestureDetector(onTap: () {}, child: const Icon(Icons.sort)),
+              GestureDetector(onTap: () {}, child: const Icon(Icons.filter_alt_sharp))
             ],
           ),
         ),
@@ -70,7 +72,7 @@ class _ExploreState extends State<Explore> {
                               manFashion[index],
                             ),
                           ),
-                          Container(
+                          SizedBox(
                               width: width * .2,
                               child: Text(
                                 manFashionName[index],
@@ -108,7 +110,7 @@ class _ExploreState extends State<Explore> {
                               womanFasion[index],
                             ),
                           ),
-                          Container(
+                          SizedBox(
                               width: width * .2,
                               child: Text(
                                 womanFashionName[index],

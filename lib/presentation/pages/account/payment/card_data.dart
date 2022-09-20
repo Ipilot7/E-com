@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
@@ -14,17 +16,17 @@ class CardData extends StatefulWidget {
 }
 
 class _CardDataState extends State<CardData> {
+  @override
   Widget build(BuildContext context) {
-    var size, height, width;
+    var size, width;
     size = MediaQuery.of(context).size;
-    height = size.height;
     width = size.width;
 
     return SafeArea(
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Lailyfa Febrina Card'),
+            const CustomAppbar(text: 'Lailyfa Febrina Card'),
             const CardWidget(),
             Expanded(
               child: Stack(

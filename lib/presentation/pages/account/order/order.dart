@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:milanas/config/constants/app_colors.dart';
-import 'package:milanas/config/constants/app_text_styles.dart';
 import 'package:milanas/presentation/components/custom_appbar.dart';
 import 'package:milanas/presentation/components/order_widget.dart';
-import 'package:milanas/presentation/pages/account/order/order_details.dart';
+
 
 class Order extends StatefulWidget {
   const Order({super.key});
@@ -19,7 +17,7 @@ class _OrderState extends State<Order> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Order'),
+            const CustomAppbar(text: 'Order'),
             const SizedBox(height: 16),
             Expanded(
               child: ListView.builder(
@@ -29,7 +27,7 @@ class _OrderState extends State<Order> {
                     onTap: () {
                       Navigator.pushNamed(context, '/orderDetails');
                     },
-                    child: OrderWidget(
+                    child: const OrderWidget(
                       generatedCode: 'LQNSU346JK',
                       orderDate: 'August 1, 2017',
                       orderStatus: 'Shipping',

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
@@ -15,9 +17,8 @@ class CardPage extends StatefulWidget {
 class _CardPageState extends State<CardPage> {
   @override
   Widget build(BuildContext context) {
-    var size, height, width;
+    var size, width;
     size = MediaQuery.of(context).size;
-    height = size.height;
     width = size.width;
     return Stack(
       children: [

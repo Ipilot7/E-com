@@ -18,7 +18,7 @@ class _BirthdayState extends State<Birthday> {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppbar(text: 'Birthday'),
+            const CustomAppbar(text: 'Birthday'),
             Expanded(
               child: Stack(
                 children: [

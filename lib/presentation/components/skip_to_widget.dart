@@ -6,17 +6,17 @@ import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/constants.dart';
 
 class SkipToWidget extends StatelessWidget {
-  SkipToWidget({
+  const SkipToWidget({
     required this.name,
     required this.text,
     required this.number,
     required this.ontapCheck,
     Key? key,
   }) : super(key: key);
-  String name;
-  String text;
-  String number;
-  bool ontapCheck;
+  final String name;
+  final String text;
+  final String number;
+ final bool ontapCheck;
 
   @override
   Widget build(BuildContext context) {

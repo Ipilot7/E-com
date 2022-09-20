@@ -18,7 +18,7 @@ class _AddAddressState extends State<AddAddress> {
     return SafeArea(
         child: Scaffold(
       body: Column(children: [
-        CustomAppbar(text: 'Add Address'),
+        const CustomAppbar(text: 'Add Address'),
         Expanded(
             child: ListView(
           children: [

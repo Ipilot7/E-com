@@ -18,7 +18,7 @@ abstract class AppTextStyles {
       fontStyle: FontStyle.normal,
       fontSize: 24.0,
       color: AppColors.metalColor.shade10);
-  static TextStyle h2ProductNames = TextStyle(
+  static TextStyle h2ProductNames = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,

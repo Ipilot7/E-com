@@ -3,7 +3,7 @@ import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 
 class OrderWidget extends StatelessWidget {
-  OrderWidget({
+  const OrderWidget({
     required this.generatedCode,
     required this.orderDate,
     required this.orderStatus,
@@ -11,11 +11,11 @@ class OrderWidget extends StatelessWidget {
     required this.price,
     Key? key,
   }) : super(key: key);
-  String generatedCode;
-  String orderDate;
-  String orderStatus;
-  String items;
-  String price;
+  final String generatedCode;
+  final String orderDate;
+  final String orderStatus;
+  final String items;
+  final String price;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,7 +29,7 @@ class OrderWidget extends StatelessWidget {
         children: [
           Text(generatedCode, style: AppTextStyles.h5),
           const SizedBox(height: 12),
-          Text('Order at E-comm : ${orderDate}', style: AppTextStyles.bodyText),
+          Text('Order at E-comm : $orderDate', style: AppTextStyles.bodyText),
           const SizedBox(height: 12),
           const Divider(
             color: AppColors.unactTxtColor,

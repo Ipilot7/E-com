@@ -4,8 +4,8 @@ import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/local_data.dart';
 
 class Scroller extends StatefulWidget {
-  Scroller({required this.list,super.key});
-  List<Widget> list;
+  const Scroller({required this.list,super.key});
+  final  List<Widget> list;
   @override
   State<Scroller> createState() => _ScrollerState();
 }

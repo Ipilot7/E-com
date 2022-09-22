@@ -318,7 +318,9 @@ class _ProductDetailState extends State<ProductDetail> {
                         onTap: () {
                           Navigator.pushNamed(context, '/productDetail');
                         },
-                        child: const SaleProductWidget(),
+                        child: const SaleProductWidget(imageSrc: 'dsdd',
+                                crossName: 'listPrducts.length}',
+                                price: 5,),
                       ),
                     ),
                   ),

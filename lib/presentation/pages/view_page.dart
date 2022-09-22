@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/app_colors.dart';
-import 'package:milanas/config/constants/assets.dart';
-import 'package:milanas/presentation/pages/account/account.dart';
-import 'package:milanas/presentation/pages/card.dart';
-import 'package:milanas/presentation/pages/explore.dart';
-import 'package:milanas/presentation/pages/home.dart';
-import 'package:milanas/presentation/pages/offer.dart';
+import 'package:milanas/config/constants/local_data.dart';
+
 
 class ViewPage extends StatefulWidget {
   const ViewPage({Key? key}) : super(key: key);
@@ -17,27 +13,7 @@ class ViewPage extends StatefulWidget {
 }
 
 class _ViewPageState extends State<ViewPage> {
-  List<Widget> pages = [
-    const Home(),
-    const Explore(),
-    const CardPage(),
-    const Offer(),
-    const Account(),
-  ];
-  List<String> menuIcons = [
-    Assets.icons.home,
-    Assets.icons.search,
-    Assets.icons.cart,
-    Assets.icons.offer,
-    Assets.icons.user
-  ];
-  List<String> menuNames = [
-    'Home',
-    'Explore',
-    'Cart',
-    'Offer',
-    'Account',
-  ];
+ 
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {

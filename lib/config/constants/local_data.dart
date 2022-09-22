@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milanas/config/constants/assets.dart';
 import 'package:milanas/presentation/components/sale_widget.dart';
+import 'package:milanas/presentation/pages/account/account.dart';
+import 'package:milanas/presentation/pages/card.dart';
+import 'package:milanas/presentation/pages/explore.dart';
+import 'package:milanas/presentation/pages/home.dart';
+import 'package:milanas/presentation/pages/offer.dart';
 
 List svgList = [
   Assets.icons.manshirt,
@@ -89,3 +94,24 @@ List starsList = [
     children: [svgstar, const SizedBox(width: 10), const Text('5')],
   ),
 ];
+ List<Widget> pages = [
+    const Home(),
+    const Explore(),
+    const CardPage(),
+    const Offer(),
+    const Account(),
+  ];
+  List<String> menuIcons = [
+    Assets.icons.home,
+    Assets.icons.search,
+    Assets.icons.cart,
+    Assets.icons.offer,
+    Assets.icons.user
+  ];
+  List<String> menuNames = [
+    'Home',
+    'Explore',
+    'Cart',
+    'Offer',
+    'Account',
+  ];

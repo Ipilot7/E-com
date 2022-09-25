@@ -28,36 +28,33 @@ class _AddAddressState extends State<AddAddress> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Country or region', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Text('First Name', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Text('Last Name', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Text('Street Address', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Text('Street Address 2 (Optional)', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Text('City', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Text('State/Province/Region', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Text('Zip Code', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Text('Number', style: AppTextStyles.h5),
-                  TextfieldZero(labeltext: ''),
+                  const TextfieldZero(),
                   Row(
                     children: [
                       Expanded(
                         child: ElevatedButton(
                           style: buttonStyle(
-                              color: AppColors.primaryBlue,
-                              borderRadius: 5,
-                              padding: const EdgeInsets.all(16)),
+                              color: AppColors.primaryBlue, borderRadius: 5, padding: const EdgeInsets.all(16)),
                           onPressed: () {
                             Navigator.pop(context);
                           },
-                          child: Text('Add Address',
-                              style: AppTextStyles.buttonText1),
+                          child: Text('Add Address', style: AppTextStyles.buttonText1),
                         ),
                       ),
                     ],

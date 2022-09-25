@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 
-
 class SaleProductWidget extends StatelessWidget {
   const SaleProductWidget({
     required this.imageSrc,
@@ -20,13 +19,15 @@ class SaleProductWidget extends StatelessWidget {
       margin: const EdgeInsets.only(left: 16),
       width: 141,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
-          border: Border.all(color: AppColors.unactTxtColor, width: 1)),
+          borderRadius: BorderRadius.circular(5), border: Border.all(color: AppColors.unactTxtColor, width: 1)),
       padding: const EdgeInsets.all(16),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.network(imageSrc!),
+          Image.network(
+            imageSrc!,
+            height: 140,
+          ),
           Text(
             crossName!,
             style: AppTextStyles.h6,

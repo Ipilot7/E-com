@@ -34,18 +34,14 @@ class _HomeState extends State<Home> {
             children: [
               Container(
                 padding: const EdgeInsets.all(16),
-                decoration: const BoxDecoration(
-                    border: Border(
-                        bottom: BorderSide(
-                            color: AppColors.neutralLight, width: 1))),
+                decoration:
+                    const BoxDecoration(border: Border(bottom: BorderSide(color: AppColors.neutralLight, width: 1))),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
                       width: width * 0.7,
-                      child: CustomTextField(
-                          svgUrl: Assets.icons.search,
-                          labelText: 'Search Product'),
+                      child: CustomTextField(svgUrl: Assets.icons.search, labelText: 'Search Product'),
                     ),
                     GestureDetector(
                         onTap: () {
@@ -110,8 +106,7 @@ class _HomeState extends State<Home> {
                     //   ),
                     // ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 16, right: 16, top: 24, bottom: 12),
+                      padding: const EdgeInsets.only(left: 16, right: 16, top: 24, bottom: 12),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -135,15 +130,13 @@ class _HomeState extends State<Home> {
                                 Navigator.pushNamed(context, '/productDetail');
                               },
                               child: SaleProductWidget(
-                                imageSrc:
-                                    state.listPrducts[index].img,
+                                imageSrc: state.listPrducts[index].img,
                                 crossName: state.listPrducts[index].title,
                                 price: state.listPrducts[index].price,
                               ))),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 16, right: 16, top: 24, bottom: 12),
+                      padding: const EdgeInsets.only(left: 16, right: 16, top: 24, bottom: 12),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -161,10 +154,10 @@ class _HomeState extends State<Home> {
                           physics: const BouncingScrollPhysics(),
                           scrollDirection: Axis.horizontal,
                           padding: const EdgeInsets.only(right: 12),
-                          itemCount: svgList.length,
+                          itemCount: state.listPrducts.length,
                           itemBuilder: (context, index) => SaleProductWidget(
-                                imageSrc: '${state.listPrducts.length}',
-                                crossName: '${state.listPrducts.length}',
+                                imageSrc: '${state.listPrducts[index].img}',
+                                crossName: '${state.listPrducts[index].title}',
                                 price: 5,
                               )),
                     ),

@@ -3,11 +3,11 @@ import 'package:milanas/config/constants/app_colors.dart';
 import 'package:milanas/config/constants/app_text_styles.dart';
 
 class TextfieldZero extends StatelessWidget {
-  TextfieldZero({
-    required this.labeltext,
+  const TextfieldZero({
+    this.labeltext,
     Key? key,
   }) : super(key: key);
-  String labeltext;
+  final String? labeltext;
 
   @override
   Widget build(BuildContext context) {

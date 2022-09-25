@@ -4,7 +4,7 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:http/http.dart';
-import 'package:milanas/data/models/products.dart';
+import 'package:milanas/data/models/product_model.dart';
 
 part 'home_state.dart';
 
@@ -15,14 +15,13 @@ class HomeCubit extends Cubit<HomeCubitState> {
     try {
       emit(HomeSteteInProgress());
 
-      var response = await get(
-          Uri.parse('https://nodejsrestapiforshop.herokuapp.com/api/products'));
+      var response = await get(Uri.parse('https://nodejsrestapiforshop.herokuapp.com/api/products'));
       if (response.statusCode == 200) {
-        List<ProductsModel> allProducts = [];
+        List<ProductModel> allProducts = [];
         List responseBody = jsonDecode(response.body);
 
         for (var item in responseBody) {
-          allProducts.add(ProductsModel.fromJson(item));
+          allProducts.add(ProductModel.fromJson(item));
         }
 
         log(allProducts.toString());

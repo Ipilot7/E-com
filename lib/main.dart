@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
         providers: [
           BlocProvider(
             create: (context) => HomeCubit(),
-            child: Container(),
           )
         ],
         child: MaterialApp(

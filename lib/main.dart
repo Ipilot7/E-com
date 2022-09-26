@@ -13,18 +13,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-        providers: [
-          BlocProvider(
-            create: (context) => HomeCubit(),
-          )
-        ],
-        child: MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'E-com',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-          ),
-          onGenerateRoute: (settings) => Routes.generateRoute(settings),
-        ));
+      providers: [
+        BlocProvider(
+          create: (context) => HomeCubit(),
+        )
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'E-com',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        onGenerateRoute: (settings) => Routes.generateRoute(settings),
+      ),
+    );
   }
 }
